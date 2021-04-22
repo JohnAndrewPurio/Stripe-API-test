@@ -19,7 +19,7 @@ async function retrieveCharges(charge, input) {
         console.log('\n\nCreated card token with id:', token.id);
         console.log('Created charge with id:', charges.id, '\n\n');
     } catch (error) {
-        console.log('\n\n', error.type, '\n\n');
+        console.log('\n\n', error.raw.message, '\n\n');
     }
     
 
